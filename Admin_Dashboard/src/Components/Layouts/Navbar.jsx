@@ -1,8 +1,10 @@
-import { Menu, Sun, Moon, Search, Bell, Maximize2, Settings } from "lucide-react";
+import { Menu, Sun, Moon, Search, Bell, Maximize2, Settings, LogOut } from "lucide-react";
 import { useTheme } from "../../Context/ThemeContext";
+import { useAuth } from "../../Context/AuthContext";
 
 const Navbar = ({ setSidebarOpen }) => {
   const { theme, toggleTheme } = useTheme();
+  const { user, logout } = useAuth();
 
   return (
     <header className="sticky top-0 z-30 h-16 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 flex items-center justify-between px-4">
@@ -47,10 +49,21 @@ const Navbar = ({ setSidebarOpen }) => {
           <span className="absolute top-1 right-1 w-2 h-2 bg-green-500 rounded-full"></span>
         </button>
 
+        {/* Logout Button */}
+        {user && (
+          <button
+            onClick={logout}
+            className="p-2 text-gray-500 dark:text-gray-400 hover:bg-red-100 dark:hover:bg-red-900/30 hover:text-red-500 rounded-lg transition-colors"
+            title="Logout"
+          >
+            <LogOut size={20} />
+          </button>
+        )}
+
         {/* User Avatar */}
         <button className="ml-2 flex items-center gap-2">
           <img
-            src="https://ui-avatars.com/api/?name=Admin&background=4F46E5&color=fff"
+            src={user?.photoURL || "https://ui-avatars.com/api/?name=Admin&background=4F46E5&color=fff"}
             alt="User"
             className="w-9 h-9 rounded-full"
           />
