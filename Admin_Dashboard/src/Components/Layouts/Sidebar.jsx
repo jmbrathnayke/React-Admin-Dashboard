@@ -161,7 +161,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
         </nav>
 
         {/* Download Center Card */}
-        <div className="p-4 m-3 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-700 dark:to-gray-800 rounded-xl">
+        <div className="p-4 m-3 bg-linear-to-br from-blue-50 to-blue-100 dark:from-gray-700 dark:to-gray-800 rounded-xl">
           <div className="flex flex-col items-center text-center">
             <div className="w-12 h-12 bg-white dark:bg-gray-600 rounded-full flex items-center justify-center mb-3 shadow-sm">
               <Download className="w-6 h-6 text-blue-600 dark:text-blue-400" />
