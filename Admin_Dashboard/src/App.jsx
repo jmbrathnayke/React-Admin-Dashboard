@@ -1,12 +1,13 @@
-import { useState } from 'react'
+import AppRoutes from './Routes/AppRoutes'
 import './App.css'
 
-function App() {
+
+const app = () => {
   return (
-    <h1 className="text-3xl font-bold text-blue-600">
-      Admin Dashboard
-    </h1>
+    <div className="App">
+      <AppRoutes />
+    </div>
   )
 }
 
-export default App
+export default app
