@@ -32,13 +32,14 @@ const MetricCard = ({ title, value, change, trend, prevValue, color = "blue" }) 
         </div>
       </div>
       
-      {/* Mini chart visualization */}
+      {
+      /* Mini chart visualization */}
       <div className="h-12 flex items-end gap-1">
         {[40, 65, 45, 70, 55, 80, 60, 75, 50, 85].map((height, i) => (
           <div
             key={i}
             className={clsx(
-              "flex-1 rounded-t bg-gradient-to-t opacity-70",
+              "flex-1 rounded-t bg-linear-to-t opacity-70",
               colorStyles[color]
             )}
             style={{ height: `${height}%` }}
