@@ -10,8 +10,7 @@ const Navbar = ({ setSidebarOpen }) => {
       <div className="flex items-center gap-4">
         <button
           className="md:hidden p-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
-          onClick={() => setSidebarOpen(true)}
-        >
+          onClick={() => setSidebarOpen(true)} >
           <Menu size={20} />
         </button>
 
