@@ -1,12 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { 
-  LayoutDashboard, 
-  Users, 
-  FolderKanban, 
-  Settings,
-  ChevronDown,
-  Download
-} from "lucide-react";
+import { LayoutDashboard, Users, FolderKanban, Settings,ChevronDown,Download} from "lucide-react";
 import { useState } from "react";
 import clsx from "clsx";
 
@@ -52,6 +45,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
       icon: Settings,
       to: "/settings",
     },
+    
   ];
 
   return (
@@ -173,7 +167,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               Duralux is a production ready CRM to get started up and running easily.
             </p>
             <button className="w-full py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
-              DOWNLOAD NOW
+              Download Now
             </button>
           </div>
         </div>
