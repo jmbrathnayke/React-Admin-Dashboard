@@ -28,7 +28,7 @@ const Table = ({ columns, data, renderCell }) => {
           <img src={row.logo} alt={value} className="w-8 h-8 rounded-lg" />
           <div>
             <p className="font-medium text-gray-800 dark:text-white">{value}</p>
-            <p className="text-xs text-gray-500 dark:text-gray-400 truncate max-w-[200px]">
+            <p className="text-xs text-gray-500 dark:text-gray-400 truncate max-w-50">
               {row.description}
             </p>
           </div>
