@@ -2,7 +2,7 @@ import AppRoutes from './Routes/AppRoutes'
 import './index.css'
 
 
-const app = () => {
+const App = () => {
   return (
     <div className="App">
       <AppRoutes />
@@ -10,4 +10,4 @@ const app = () => {
   )
 }
 
-export default app
+export default App
