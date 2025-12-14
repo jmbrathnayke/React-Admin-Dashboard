@@ -1,5 +1,6 @@
 import { Search } from "lucide-react";
 
+// SearchInput component for user input
 const SearchInput = ({ value, onChange, placeholder = "Search..." }) => {
   return (
     <div className="relative">

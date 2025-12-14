@@ -1,3 +1,4 @@
+// ProgressBar component to display progress visually
 const ProgressBar = ({ percentage, color = "#4F46E5" }) => {
   return (
     <div className="flex items-center gap-3">

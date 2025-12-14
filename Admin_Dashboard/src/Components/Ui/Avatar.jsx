@@ -1,5 +1,6 @@
 import clsx from "clsx";
 
+// Avatar component to display user profile images
 const Avatar = ({ src, alt, size = "md", className }) => {
   const sizes = {
     sm: "w-8 h-8",

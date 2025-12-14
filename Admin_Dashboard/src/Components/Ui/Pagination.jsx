@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
+// Pagination component to navigate through pages
 const Pagination = ({ total, page, limit, setPage }) => {
   const totalPages = Math.ceil(total / limit);
 

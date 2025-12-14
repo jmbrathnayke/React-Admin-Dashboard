@@ -1,6 +1,7 @@
 import { Mail, Send, CheckCircle, Eye, MousePointer, XCircle } from "lucide-react";
 import clsx from "clsx";
 
+// StatCard component to display statistical data with an icon  
 const iconMap = {
   mail: Mail,
   send: Send,
@@ -10,6 +11,7 @@ const iconMap = {
   x: XCircle,
 };
 
+// Color styles for different stat types
 const colorStyles = {
   blue: "text-blue-500 bg-blue-50 dark:bg-blue-900/20",
   yellow: "text-yellow-500 bg-yellow-50 dark:bg-yellow-900/20",
@@ -19,6 +21,7 @@ const colorStyles = {
   red: "text-red-500 bg-red-50 dark:bg-red-900/20",
 };
 
+// StatCard component
 const StatCard = ({ label, value, icon, color = "blue" }) => {
   const Icon = iconMap[icon] || Mail;
 

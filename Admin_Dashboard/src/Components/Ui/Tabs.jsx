@@ -1,5 +1,6 @@
 import clsx from "clsx";
 
+// Tabs component for navigation between different sections
 const Tabs = ({ tabs, activeTab, onChange }) => {
   return (
     <div className="border-b border-gray-200 dark:border-gray-700">

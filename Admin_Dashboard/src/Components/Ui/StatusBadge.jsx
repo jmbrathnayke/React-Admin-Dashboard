@@ -1,5 +1,5 @@
 import clsx from "clsx";
-
+// StatusBadge component 
 const statusStyles = {
   "In Progress": "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
   "Not Started": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400",
@@ -19,6 +19,7 @@ const dotStyles = {
   "Active": "bg-green-500",
   "Inactive": "bg-gray-500",
 };
+
 
 const StatusBadge = ({ status }) => {
   return (

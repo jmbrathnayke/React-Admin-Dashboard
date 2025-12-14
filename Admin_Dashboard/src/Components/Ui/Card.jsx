@@ -1,3 +1,4 @@
+//card component
 const Card = ({ title, value, icon }) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-5 flex items-center justify-between">
