@@ -55,7 +55,7 @@ const Login = () => {
         {/* Content */}
         <div className="relative z-10 space-y-6">
           <h1 className="text-4xl font-bold text-white leading-tight">
-            Welcome to your<br />Admin Dashboard
+            Welcome to your Admin Dashboard
           </h1>
           <p className="text-blue-100 text-lg max-w-md">
             Manage your business with powerful analytics, user management, and project tracking tools.
@@ -194,7 +194,7 @@ const Login = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3 px-4 bg-linear-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-blue-500/30"
+                className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-blue-500/30"
               >
                 {loading ? (
                   <span className="flex items-center justify-center gap-2">

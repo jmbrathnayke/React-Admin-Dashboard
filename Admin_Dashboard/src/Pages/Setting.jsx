@@ -65,7 +65,7 @@ const Settings = () => {
           name: "Two-Factor Authentication",
           description: "Add an extra layer of security to your account",
           action: (
-            <button className="px-4 py-2 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-sm">
+            <button className="px-4 py-2 border bg-gray-50 border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-sm">
               Enable
             </button>
           ),
@@ -74,7 +74,7 @@ const Settings = () => {
           name: "Session Management",
           description: "Manage active sessions and devices",
           action: (
-            <button className="px-4 py-2 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-sm">
+            <button className="px-4 py-2 border  bg-gray-50 border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-sm">
               View Sessions
             </button>
           ),
@@ -89,7 +89,7 @@ const Settings = () => {
           name: "Profile Information",
           description: "Update your profile details and avatar",
           action: (
-            <button className="px-4 py-2 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-sm">
+            <button className="px-4 py-2 border  bg-gray-50 border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-sm">
               Edit Profile
             </button>
           ),
