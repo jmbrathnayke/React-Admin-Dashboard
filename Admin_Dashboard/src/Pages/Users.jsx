@@ -1,18 +1,8 @@
 import { useState } from "react";
 import Tabs from "../Components/Ui/Tabs";
-import Avatar from "../Components/Ui/Avatar";
 import { customerProfile } from "../Data/MockData";
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Trash2, 
-  Edit, 
-  Star, 
-  Eye, 
-  Plus,
-  UserPlus
-} from "lucide-react";
+import { MapPin, Phone, Mail, Trash2, Edit, Star, Eye, Plus,UserPlus} from "lucide-react";
+
 
 const Users = () => {
   const [activeTab, setActiveTab] = useState("overview");
@@ -27,6 +17,7 @@ const Users = () => {
     { id: "security", label: "Security" },
   ];
 
+  // Profile Details Data
   const profileDetails = [
     { label: "Full Name:", value: profile.fullName },
     { label: "Surname:", value: profile.surname },
@@ -70,8 +61,10 @@ const Users = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
         {/* Profile Card */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6">
+
           {/* Avatar */}
           <div className="flex flex-col items-center">
             <div className="relative">
@@ -152,6 +145,7 @@ const Users = () => {
 
         {/* Profile Details */}
         <div className="lg:col-span-2 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+
           {/* Tabs */}
           <div className="px-6 pt-4">
             <Tabs tabs={tabs} activeTab={activeTab} onChange={setActiveTab} />
@@ -161,6 +155,7 @@ const Users = () => {
           <div className="p-6">
             {activeTab === "overview" && (
               <div className="space-y-6">
+                
                 {/* Profile About */}
                 <div>
                   <div className="flex items-center justify-between mb-4">
